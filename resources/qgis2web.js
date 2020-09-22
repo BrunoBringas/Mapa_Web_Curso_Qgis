@@ -37,6 +37,19 @@ layerSwitcher.hidePanel = function() {};
 layerSwitcher.showPanel();
 
 
+    var searchLayer = new SearchLayer({
+      layer: lyr_Sectores_0,
+      colName: 'Cod_Sector',
+      zoom: 10,
+      collapsed: true,
+      map: map
+    });
+
+    map.addControl(searchLayer);
+    document.getElementsByClassName('search-layer')[0]
+    .getElementsByTagName('button')[0].className +=
+    ' fa fa-binoculars';
+    
 map.getView().fit([-8741777.903649, -800343.101279, -8739062.466657, -798360.852122], map.getSize());
 
 var NO_POPUP = 0
