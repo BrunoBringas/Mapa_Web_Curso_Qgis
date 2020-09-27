@@ -38,8 +38,8 @@ layerSwitcher.showPanel();
 
 
     var searchLayer = new SearchLayer({
-      layer: lyr_Sectores_0,
-      colName: 'Cod_Sector',
+      layer: lyr_Provincias_1,
+      colName: 'PROVINCIA',
       zoom: 10,
       collapsed: true,
       map: map
@@ -50,7 +50,7 @@ layerSwitcher.showPanel();
     .getElementsByTagName('button')[0].className +=
     ' fa fa-binoculars';
     
-map.getView().fit([-8741777.903649, -800343.101279, -8739062.466657, -798360.852122], map.getSize());
+map.getView().fit([-9524553.317244, -1103390.137245, -8363364.312435, -353478.885791], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1
